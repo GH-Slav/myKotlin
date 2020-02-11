@@ -10,6 +10,7 @@ class Human {
         var homeWorkId: Int? = null
         fun sayHello(){
             name = "Alex"
+  // alex
             println("my name is $name")
         }
 
