@@ -1,23 +1,24 @@
+
 class Human {
     var name: String? = null
 
 
     class Student {
-        fun sayId(studentId: Int? = null) = "my id is $studentId"
+        fun sayId(studentId: Int? = null) = println("My id is $studentId")
     }
 
     inner class Teacher {
-        var homeWorkId: Int? = null
-        fun sayHello(){
-            name = "Alex"
-  // alex
-            println("my name is $name")
+
+        fun sayHello() {
+            println("My name is ${name ?: "ALex"}")
         }
 
-        fun giveHomeWork() :Int {
-            return homeWorkId ?: 14
-        }
 
+        fun giveHomeWork(homeWorkId: String? = null) {
+            println("Homework id is $homeWorkId")
+        }
 
     }
+
+
 }

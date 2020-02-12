@@ -13,9 +13,8 @@ fun main() {
 
     // Dz
     val myStudent = Human.Student()
-   println (myStudent.sayId())
+    myStudent.sayId()
     val myTeacher = Human().Teacher()
     myTeacher.sayHello()
-    print("Homework id is ")
-    println (myTeacher.giveHomeWork())
+    myTeacher.giveHomeWork("14")
 }
