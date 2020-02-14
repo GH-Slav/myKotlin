@@ -1,3 +1,5 @@
+package by.tms.Lessons.les1
+
 class Group {
     val id = 900
     class  SubGroup {

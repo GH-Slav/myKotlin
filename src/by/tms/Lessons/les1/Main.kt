@@ -1,5 +1,7 @@
+package by.tms.Lessons.les1
+
 fun main() {
-    /*   val student = Student()
+    val student = Student()
    student.study()
    println(student.read(2))
        println(student.grow())
@@ -9,12 +11,6 @@ fun main() {
        mySubGroup.write()
        val myInnerGroup = Group().InnerGroup()
        myInnerGroup.talk()
-     */
 
-    // Dz
-    val myStudent = Human.Student()
-    myStudent.sayId()
-    val myTeacher = Human().Teacher()
-    myTeacher.sayHello()
-    myTeacher.giveHomeWork("14")
+
 }

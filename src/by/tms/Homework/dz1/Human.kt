@@ -1,4 +1,4 @@
-
+package by.tms.Homework.dz1
 class Human {
     var name: String? = null
 

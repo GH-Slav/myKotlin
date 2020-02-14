@@ -1,3 +1,5 @@
+package by.tms.Lessons.les1
+
 class Student {
     var name = "Egor"
     var age = 18.5F
