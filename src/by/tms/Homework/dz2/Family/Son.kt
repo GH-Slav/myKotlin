@@ -8,7 +8,7 @@ class Son(name: String, age: Int, sex: Human.SEX, occupation: String, hasFamily:
                 "I am $age years old \n" +
                 "My gender $sex \n" +
                 "I was engaged $occupation \n" +
-                "I'm married - $hasFamily")
+                "I'm married - $hasFamily \n")
 
     }
 
