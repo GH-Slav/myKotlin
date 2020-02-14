@@ -97,3 +97,10 @@ fabric.properties
 hs_err_pid*
 
 !/myKotlin.iml
+.idea/codeStyles/
+.idea/kotlinc.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+!/.gitignore
+
