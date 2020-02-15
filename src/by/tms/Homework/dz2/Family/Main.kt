@@ -1,10 +1,10 @@
 package by.tms.Homework.dz2.Family
 
 fun main() {
-    val myFather = Father("Victor", 45, Human.SEX.MAN, "ROAD CAR", true)
-    val myMother = Mother("Anna", 41, Human.SEX.WOMAN, "Minsk", Mother.Marry.YesNoYes)
-    val myDaughter = Daughter("Eva", 10, Human.SEX.WOMAN, "TOKYO", Mother.Marry.No)
-    val mySon = Son("Sasha", 9, Human.SEX.MAN, "CAR GAME", false)
+    val myFather = FatherImpl("Victor", 45, Human.SEX.MAN, "ROAD CAR", true)
+    val myMother = MotherImpl("Anna", 41, Human.SEX.WOMAN, "Minsk", Mother.Marry.Yes)
+    val myDaughter = DaughterImpl("Eva", 10, Human.SEX.WOMAN, "Tokyo", Mother.Marry.No)
+    val mySon = SonImpl("Sasha", 9, Human.SEX.MAN, "CAR GAME", false)
 
     myFather.say()
     myMother.say()
