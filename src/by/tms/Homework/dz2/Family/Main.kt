@@ -13,13 +13,16 @@ fun main() {
     mySon.say()
 
 
-    var catalogFamily = ArrayList<String>()
-    catalogFamily.add("${myFather.name} ${myFather.age}")
-    catalogFamily.add("${myMother.name} ${myMother.age}")
-    catalogFamily.add("${myDaughter.name} ${myDaughter.age}")
-    catalogFamily.add("${mySon.name} ${mySon.age}")
+    var catalogFamily = ArrayList<Human>()
+    catalogFamily.add(myFather)
+    catalogFamily.add(myMother)
+    catalogFamily.add(myDaughter)
+    catalogFamily.add(mySon)
 
-    catalogFamily.sortBy { myFather.age }
+    val catalogNameAge = catalogFamily.map { it -> it.name +" "+ it.age }
 
-    println(catalogFamily)
+    catalogNameAge.sortedBy { myFather.age }
+
+    println(catalogNameAge)
+
 }
