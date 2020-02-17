@@ -19,9 +19,11 @@ fun main() {
     catalogFamily.add(myDaughter)
     catalogFamily.add(mySon)
 
-    val catalogNameAge = catalogFamily.map { it -> it.name +" "+ it.age }
+   val catalogNameAge = catalogFamily.map { it -> it.name +" "+ it.age }
 
-    catalogNameAge.sortedBy { myFather.age }
+//    val catalogNameAge = catalogFamily.map {it.name to it.age }
+
+    catalogNameAge.sortedByDescending { it }
 
     println(catalogNameAge)
 
