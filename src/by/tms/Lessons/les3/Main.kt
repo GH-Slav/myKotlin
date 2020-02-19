@@ -44,17 +44,26 @@ fun main() {
 //    job.start()
 //    Thread.sleep(4000)
 
-    runBlocking {
-        withTimeoutOrNull(500){
-            println(countTimesTen(9))
-        }?: println("Timeout")
-    }
-//withContext(Dispatchers.Main){}
+//    runBlocking {
+//        withTimeoutOrNull(500){
+//            println(countTimesTen(9))
+//        }?: println("Timeout")
+//    }
+////withContext(Dispatchers.Main){}
+//
+//
+//}
+//
+//suspend fun countTimesTen(n: Int): Int {
+//    delay(1000)
+//    return n * 10
 
+    //сингел тон
+    val car = Car.instance
+    car.model = "Lamba"
+    car.horsePower = 1000
+    val newCar = Car.a("Ferrari", 856555)
 
-}
+    newCar.showParams()
 
-suspend fun countTimesTen(n: Int): Int {
-    delay(1000)
-    return n * 10
 }

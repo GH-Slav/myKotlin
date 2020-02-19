@@ -20,6 +20,16 @@ class Car {
     fun changeModel() {
         val a = model ?: return
     }
+
+    companion object{
+     fun a(model:String, power:Int): Car {
+        fun a() = { println()}
+        val instance = Car()
+         instance.model = model
+         instance.horsePower = power
+         return instance
+
+    }
 }
 
 
